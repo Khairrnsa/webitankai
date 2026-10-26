@@ -1,0 +1,301 @@
+body {
+  background-color: white;
+}
+
+.carousel-inner img {
+ 
+  object-fit: cover;
+}
+@font-face {
+ font-family: RocGros; 
+ src:url(font/roc-grotesk-bold.otf);
+}
+
+.roc-text {
+  font-family: RocGros;
+  font-size: 250%;
+}
+.card img {
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+.blur-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.blur-card img {
+  width: 100%;
+  display: block;
+  transition: filter 0.3s ease;
+}
+
+.blur-card:hover img {
+  filter: blur(3px) brightness(0.8);
+}
+
+.blur-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  padding: 10px 15px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.blur-card:hover .blur-caption {
+  opacity: 1;
+}
+
+
+.letter-box {
+  display: none;
+}
+  .filters-container {
+    display: flex;
+    justify-content: start;
+    gap: 0.rem;
+    margin-left: 7.5%; /* Sesuaikan dengan posisi grid surat */
+    flex-wrap: wrap;
+  }
+
+  .filter-btn {
+    border-radius: 30px;
+    border: 2px solid black;
+    font-weight: 500;
+    padding: 8px 20px;
+    transition: all 0.3s ease;
+}
+
+.filter-btn.love-btn {
+    background-color: #FACAC7;
+    color: #3c423b; /* Warna teks yang lebih gelap untuk kontras */
+    border-color: #3c423b;
+}
+
+.filter-btn.health-btn {
+    background-color: #EDD8BF;
+    color: #3c423b; /* Warna teks yang lebih gelap untuk kontras */
+    border-color: #3c423b;
+}
+
+.filter-btn.career-btn {
+    background-color: #BAB7E2;
+    color: #3c423b; /* Warna teks yang lebih gelap untuk kontras */
+  border-color: #3c423b;
+}
+
+.filter-btn.you-btn {
+    background-color: #B9D5E8;
+    color: #3c423b; /* Warna teks yang lebih gelap untuk kontras */
+  border-color: #3c423b;
+}
+
+
+
+.filter-btn.love-btn:hover {
+    background-color: #e2746f; /* Warna hover untuk love-btn */
+}
+
+.filter-btn.health-btn:hover {
+    background-color: #e0aa6d; /* Warna hover untuk health-btn */
+}
+
+.filter-btn.career-btn:hover {
+    background-color: #8E8BD6; /* Warna hover untuk career-btn */
+}
+
+.filter-btn.you-btn:hover {
+    background-color: #77b2d6; /* Warna hover untuk you-btn */
+}
+/* Styling for the badge */
+.badge {
+  display: inline-block;
+  padding: 4px 9px;  /* Ukuran lebih kecil agar tidak kebesaran */
+  border-radius: 5%;  /* Membuat bentuk lebih sedikit petak */
+  font-weight: 500;
+  font-size: 0.75rem; /* Ukuran font lebih kecil */
+  text-align: center;
+  border: 2px solid black; /* Menambahkan border untuk badge */
+  margin-right: 10px; /* Memberikan sedikit jarak antara badge */
+}
+
+/* Specific colors for the badges, matching filter buttons */
+.badge-love {
+  background-color: #FACAC7;
+    color: #872a20; /* Warna teks yang lebih gelap untuk kontras */
+    border-color: #ea6b5d;
+}
+
+.badge-health {
+  background-color: #EDD8BF;
+    color: #7a5923; /* Warna teks yang lebih gelap untuk kontras */
+    border-color: #e2a036;
+}
+
+.badge-career {
+  background-color: #BAB7E2;
+    color: #453b8e; /* Warna teks yang lebih gelap untuk kontras */
+  border-color: #6d60d1;
+}
+
+.badge-you {
+  background-color: #B9D5E8;
+  color: #134d54; /* Warna teks yang lebih gelap untuk kontras */
+  border-color: #1b7782;
+}
+
+/* Styling for positioning the badges on the left side */
+.letter-box .mt-3 {
+  display: flex;
+  align-items: center; /* Mengatur badge di kiri dan dalam satu baris */
+  justify-content: flex-start; /* Menjaga badge berada di kiri */
+}
+.album-container {
+  position: relative;
+  width: 300px; /* Sesuaikan dengan ukuran gambar */
+  height: 300px; /* Sesuaikan dengan ukuran gambar */
+}
+
+.album-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+.card {
+  background-color: #212020;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.img-holder {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.img-holder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.text-music {
+  width: 100%;
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.text-music h2 {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.text-music p {
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
+  font-weight: 400;
+  color: #b3b3b3;
+}
+
+.play-icon {
+  position: absolute;
+  bottom: 90px;
+  right: 20px;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.card:hover .play-icon {
+  opacity: 1;
+  transform: translateY(-10px);
+}
+
+.card:hover .img-holder img {
+  transform: scale(1.05);
+}
+
+.card:hover {
+  background-color: #343333;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #1db954;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 14px solid black;
+  transform: rotate(90deg);
+}
+
+.play-icon:hover .circle {
+  transform: scale(1.1);
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+.video-wrapper {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.video-wrapper video {
+  width: 90%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  object-fit: cover;
+}
+.header-button {
+  text-decoration: none;
+  color: #6c757d; /* Default text color */
+}
+
+.header-button:hover {
+  color: black; /* Text turns black on hover */
+}
